@@ -1,0 +1,38 @@
+{
+  "name": "gym-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "dev": "nodemon app.ts",
+    "test": "jest",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "postinstall": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mouzam007/gym-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mouzam007/gym-backend/issues"
+  },
+  "homepage": "https://github.com/mouzam007/gym-backend#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "eslint": "^8.43.0",
+    "typescript": "^5.1.3",
+    "gts": "^3.1.1",
+    "@types/node": "^14.11.2"
+  },
+  "dependencies": {
+    "gts": "^3.1.1"
+  }
+}
