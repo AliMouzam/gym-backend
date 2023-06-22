@@ -14,7 +14,7 @@ class UserHandler {
         return response.get4xxResponse(result);
       }
       return response.get2xxResponse({
-        statusCode: constants.CODE.OK,
+        statusCode: constants.CODE.CREATED,
         data: result,
         message: messages.SIGNUP_SUCCESSFULL,
       });

@@ -7,10 +7,10 @@ class UserController {
   async signUp(req: Request, res: Response) {
     try {
       const response = await userHandler.signUp(req);
-      if (response.status === false) {
+      if (!response.status) {
         return res.status(constants.CODE.BAD_REQUEST).send(response);
       }
-      return res.status(constants.CODE.OK).send(response);
+      return res.status(constants.CODE.CREATED).send(response);
     } catch (error: any) {
       return res
         .status(constants.CODE.BAD_REQUEST)
